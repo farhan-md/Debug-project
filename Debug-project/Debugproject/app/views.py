@@ -13,7 +13,7 @@ def home_view(request):
         student = {"name" : "Ali", "age" : 20}
         logger.debug(f"student: {student}")
         # sending wrong variable to template
-        return render(request, "app/home.html", {"student_name": student["namee"]})
+        return render(request, "app/home.html", {"student_name": student["name"]})
     
     except Exception as e:
         logging.error(f"Error in home_view {e}")
