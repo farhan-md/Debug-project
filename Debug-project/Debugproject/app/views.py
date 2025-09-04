@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import HttpResponse
 import logging
 # Create your views here.
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 def home_view(request):
